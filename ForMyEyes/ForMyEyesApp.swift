@@ -1,6 +1,6 @@
 //
-//  ForMyEyeApp.swift
-//  ForMyEye
+//  ForMyEyesApp.swift
+//  ForMyEyes
 //
 //  Created by 浅野竣弥 on 2024/11/28.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import UserNotifications
 
 @main
-struct ForMyEyeApp: App {
+struct ForMyEyesApp: App {
     init() {
         configureNotificationDelegate()
     }

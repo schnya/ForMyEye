@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  ForMyEye
+//  ForMyEyes
 //
 //  Created by 浅野竣弥 on 2024/11/28.
 //
@@ -69,7 +69,7 @@ struct ContentView: View {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             if isRunning && !isScreenOff {
                 usageTime += 1
-                if usageTime == 600 { // 10分経過時
+                if usageTime == 6 { // 10分経過時
                     print("10分使用しました！")
                     sendNotification()
                 } else if usageTime == 1200 {

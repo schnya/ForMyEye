@@ -1,13 +1,13 @@
 //
-//  ForMyEyeUITests.swift
-//  ForMyEyeUITests
+//  ForMyEyesUITests.swift
+//  ForMyEyesUITests
 //
 //  Created by 浅野竣弥 on 2024/11/28.
 //
 
 import XCTest
 
-final class ForMyEyeUITests: XCTestCase {
+final class ForMyEyesUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

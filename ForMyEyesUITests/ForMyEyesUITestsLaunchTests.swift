@@ -1,13 +1,13 @@
 //
-//  ForMyEyeUITestsLaunchTests.swift
-//  ForMyEyeUITests
+//  ForMyEyesUITestsLaunchTests.swift
+//  ForMyEyesUITests
 //
 //  Created by 浅野竣弥 on 2024/11/28.
 //
 
 import XCTest
 
-final class ForMyEyeUITestsLaunchTests: XCTestCase {
+final class ForMyEyesUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
