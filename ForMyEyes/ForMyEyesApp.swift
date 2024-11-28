@@ -4,7 +4,7 @@ import UserNotifications
 @main
 struct ForMyEyesApp: App {
     init() {
-        NotificationManager.shared.requestPermission()
+        NotificationManager.requestPermission()
     }
 
     var body: some Scene {
