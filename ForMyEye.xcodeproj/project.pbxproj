@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		496CCF282CF86ADC007B389C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		49847CBF2CF8622F00D9EA31 /* ForMyEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForMyEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49847CC22CF8622F00D9EA31 /* ForMyEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForMyEyeApp.swift; sourceTree = "<group>"; };
 		49847CC42CF8622F00D9EA31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		49847CC12CF8622F00D9EA31 /* ForMyEye */ = {
 			isa = PBXGroup;
 			children = (
+				496CCF282CF86ADC007B389C /* Info.plist */,
 				49847CC22CF8622F00D9EA31 /* ForMyEyeApp.swift */,
 				49847CC42CF8622F00D9EA31 /* ContentView.swift */,
 				49847CC62CF8623000D9EA31 /* Assets.xcassets */,
@@ -422,8 +424,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ForMyEye/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2ASPM5F72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ForMyEye/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,8 +454,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ForMyEye/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2ASPM5F72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ForMyEye/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
