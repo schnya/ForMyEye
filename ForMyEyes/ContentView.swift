@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ForMyEyes
-//
-//  Created by 浅野竣弥 on 2024/11/28.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -15,7 +8,7 @@ struct ContentView: View {
 
     let startTimeKey = "timerStartTime" // UserDefaults用のキー
     let backgroundTimeKey = "backgroundTime" // バックグラウンド移行時の時刻保存用のキー
-    let resetInterval = 1220 // 20分20秒（秒単位）
+    let resetInterval = 122 // 20分20秒（秒単位）
 
     var body: some View {
         VStack {
@@ -69,14 +62,21 @@ struct ContentView: View {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             if isRunning && !isScreenOff {
                 usageTime += 1
-                if usageTime == 6 { // 10分経過時
-                    print("10分使用しました！")
-                    sendNotification()
-                } else if usageTime == 1200 {
-                    print("20分使用しました！")
-                    sendNotification()
+                if usageTime == 6 {
+                    NotificationManager.shared.sendNotification(
+                        title: "スマホ使いすぎ！",
+                        body: "10分以上使用しています。少し休憩しましょう。"
+                    )
+                } else if usageTime == 120 {
+                    NotificationManager.shared.sendNotification(
+                        title: "スマホ使いすぎ！",
+                        body: "20分以上使用しています。少し休憩しましょう。"
+                    )
                 } else if usageTime >= resetInterval {
-                    sendNotification()
+                    NotificationManager.shared.sendNotification(
+                        title: "はい、リセット",
+                        body: "寝れるとき寝えや、まじで"
+                    )
                     usageTime = 0
                 }
             }
@@ -106,8 +106,7 @@ struct ContentView: View {
         print("リセット処理実行")
         usageTime = 0 // 使用時間をリセット
         isRunning = false // タイマーを停止
-        UNUserNotificationCenter.current().removeAllPendingNotificationRequests() // 通知を全て削除
-        print("状態がリセットされました")
+        NotificationManager.shared.cancelAllNotifications()
     }
 
     // 使用時間をリセット
@@ -160,24 +159,6 @@ struct ContentView: View {
                         startTimer()
                     }
                 }
-            }
-        }
-    }
-
-    func sendNotification() {
-        let content = UNMutableNotificationContent()
-        content.title = "スマホ使いすぎ！"
-        content.body = "10分以上使用しています。少し休憩しましょう。"
-        content.sound = .default
-
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-
-        UNUserNotificationCenter.current().add(request) { error in
-            if let error = error {
-                print("通知エラー: \(error.localizedDescription)")
-            } else {
-                print("通知がスケジュールされました")
             }
         }
     }

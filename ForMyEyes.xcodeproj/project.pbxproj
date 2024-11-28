@@ -14,6 +14,7 @@
 		49847CD42CF8623000D9EA31 /* ForMyEyesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49847CD32CF8623000D9EA31 /* ForMyEyesTests.swift */; };
 		49847CDE2CF8623000D9EA31 /* ForMyEyesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49847CDD2CF8623000D9EA31 /* ForMyEyesUITests.swift */; };
 		49847CE02CF8623000D9EA31 /* ForMyEyesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49847CDF2CF8623000D9EA31 /* ForMyEyesUITestsLaunchTests.swift */; };
+		4988F8622CF8CD3500F2F45F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988F8612CF8CD3500F2F45F /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		49847CD92CF8623000D9EA31 /* ForMyEyesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForMyEyesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49847CDD2CF8623000D9EA31 /* ForMyEyesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForMyEyesUITests.swift; sourceTree = "<group>"; };
 		49847CDF2CF8623000D9EA31 /* ForMyEyesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForMyEyesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4988F8612CF8CD3500F2F45F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				49847CC42CF8622F00D9EA31 /* ContentView.swift */,
 				49847CC62CF8623000D9EA31 /* Assets.xcassets */,
 				49847CC82CF8623000D9EA31 /* Preview Content */,
+				4988F8612CF8CD3500F2F45F /* NotificationManager.swift */,
 			);
 			path = ForMyEyes;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4988F8622CF8CD3500F2F45F /* NotificationManager.swift in Sources */,
 				49847CC52CF8622F00D9EA31 /* ContentView.swift in Sources */,
 				49847CC32CF8622F00D9EA31 /* ForMyEyesApp.swift in Sources */,
 			);
